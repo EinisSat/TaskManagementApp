@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nameView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Add a new task"
+        android:textSize="32sp" />
+
+    <LinearLayout
+        android:layout_width="374dp"
+        android:layout_height="558dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:text="Name"
+                android:textAlignment="center"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Name" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="11dp" />
+
+            <TextView
+                android:id="@+id/descriptionView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:text="Description"
+                android:textAlignment="center"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/editDescription"
+                android:layout_width="match_parent"
+                android:layout_height="119dp"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Description" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="11dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/priorityView"
+                    android:layout_width="129dp"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="Priority"
+                    android:textAlignment="center"
+                    android:textSize="26sp" />
+
+                <Spinner
+                    android:id="@+id/priority"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="11dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/categoryView"
+                    android:layout_width="262dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="Category"
+                    android:textAlignment="center"
+                    android:textSize="26sp" />
+
+                <Spinner
+                    android:id="@+id/category"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="5dp"
+                    android:rotationX="0">
+
+                    <TextView
+                        android:id="@+id/deadlineView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Date"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+
+                    <Button
+                        android:id="@+id/dateButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pick a deadline" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="10dp"
+                    android:rotationX="0">
+
+                    <TextView
+                        android:id="@+id/timeView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Time"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+
+                    <Button
+                        android:id="@+id/timeButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pick a deadline" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/goBack"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:text="+"
+        android:textSize="30dp" />
+
+</LinearLayout>

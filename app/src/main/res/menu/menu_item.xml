@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        app:showAsAction="always"
+        android:title=""
+        android:icon="@drawable/round_filter_alt_24"/>
+
+    <item
+        app:showAsAction="always"
+        android:title=""
+        android:icon="@drawable/round_filter_list_24">
+
+
+        <menu>
+<!--            <item-->
+<!--                android:id="@+id/sortText"-->
+<!--                android:title="Sort by:"-->
+<!--                app:showAsAction="never"-->
+<!--                android:icon="@drawable/baseline_abc_24"/>-->
+            <item
+                android:id="@+id/sortName"
+                android:title="Title"
+                app:showAsAction="never"
+                android:icon="@drawable/baseline_abc_24"/>
+            <item
+                android:id="@+id/sortDeadline"
+                android:title="Deadline"
+                app:showAsAction="never"
+                android:icon="@drawable/baseline_access_time_24"/>
+            <item
+                android:id="@+id/sortPriority"
+                android:title="Priority"
+                app:showAsAction="never"
+                android:icon="@drawable/baseline_priority_high_24"/>
+        </menu>
+
+    </item>
+
+
+</menu>
